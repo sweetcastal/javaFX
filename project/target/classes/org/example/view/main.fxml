@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="org.example.controller.MainController">
+   <children>
+      <TableView fx:id="tableView" layoutX="24.0" layoutY="89.0" prefHeight="284.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="55.33334541320801" text="名称" />
+          <TableColumn fx:id="idcard" prefWidth="64.66667938232422" text="身份证" />
+            <TableColumn fx:id="gender" prefWidth="64.66665649414062" text="性别" />
+            <TableColumn fx:id="age" prefWidth="67.33332824707031" text="年龄" />
+            <TableColumn fx:id="position" prefWidth="67.33331298828125" text="职位" />
+            <TableColumn fx:id="birthday" prefWidth="66.6666259765625" text="生日" />
+            <TableColumn fx:id="depart" prefWidth="83.33331298828125" text="部门" />
+            <TableColumn fx:id="enterDate" prefWidth="137.33334350585938" text="入职时间" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="156.0" layoutY="14.0" prefHeight="66.0" prefWidth="261.0" text="企业员工管理系统">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" text="新增" onAction="#showAddView"/>
+      <Button layoutX="487.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" text="删除" onAction="#doDelete"/>
+      <Button layoutX="272.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" text="修改" onAction="#showUpdateView"/>
+       <Button layoutX="506.0" layoutY="32.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" text="刷新" onAction="#refresh"/>
+   </children>
+</AnchorPane>
